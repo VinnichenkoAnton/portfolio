@@ -1,0 +1,63 @@
+.main {
+    min-height: 100vh;
+    position: relative;
+    background: url("../img/main_bg.png") no-repeat 50%/cover;
+    padding: 38px 0 300px 0;
+    &__hamburger {
+        position: absolute;
+        top: 37px;
+        right: 37px;
+        display: flex;
+        flex-direction: column;
+        height: 21px;
+        justify-content: space-between;
+        align-items: flex-end;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 39px;
+            height: 3px;
+            background: $white;
+        }
+        span.main__hamburger_short {
+            width: 31px;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+    }
+    &__link {
+        font-family: FontAwesome;
+        font-size: 20.9px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: -0.015em;
+        color: $white;
+    }
+    &__header {
+        margin-top: 290px;
+        font-size: 120px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: $white;
+    }
+    &__subheader {
+        margin-top: 25px;
+        font-size: 84px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: $white;
+        &_bold {
+            font-weight: 600;
+        }
+    }
+    &__speciality {
+        margin-top: 10px;
+        font-size: 28px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: $white;
+    }
+}
