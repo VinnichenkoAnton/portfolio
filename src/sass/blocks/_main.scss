@@ -2,25 +2,63 @@
     min-height: 100vh;
     position: relative;
     background: url("../img/main_bg.png") no-repeat 50%/cover;
-    padding: 38px 0 300px 0;
+    padding-top: 38px;
     &__hamburger {
+        overflow: hidden;
         position: absolute;
-        top: 37px;
         right: 37px;
+        width: 39px;
+        height: 21px;
         display: flex;
         flex-direction: column;
-        height: 21px;
         justify-content: space-between;
         align-items: flex-end;
-        cursor: pointer;
+        transition: all .5s;
+        &:hover {
+            box-shadow: 0 5px 15px #313741;
+        }
+        &_active {
+            right: calc(100% - 330px);
+            z-index: 11;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+        input {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 1;
+        }
         span {
-            display: block;
-            width: 39px;
+            width: 40px;
             height: 3px;
             background: $white;
+            border-radius: 4px;
+            -webkit-transition: all 1s cubic-bezier(.08, .81, .87, .71);
+            -moz-transition: all 1s cubic-bezier(.08, .81, .87, .71);
+            -ms-transition: all 1s cubic-bezier(.08, .81, .87, .71);
+            -o-transition: all 1s cubic-bezier(.08, .81, .87, .71);
+            transition: all 1s cubic-bezier(.08, .81, .87, .71);
+            &:nth-child(3) {
+                width: 30px;
+            }
         }
-        span.main__hamburger_short {
-            width: 31px;
+        & input:checked~.main__span1 {
+            background-color: $white;
+            transform: rotate(45deg) translate(12px, 3px);
+        }
+        & input:checked~.main__span2 {
+            background-color: $white;
+            transform: rotate(495deg);
+        }
+        & input:checked~.main__span3 {
+            background-color: $white;
+            transform: rotate(45deg);
+            opacity: 0;
         }
     }
     &__social {
@@ -35,6 +73,11 @@
         font-weight: 400;
         letter-spacing: -0.015em;
         color: $white;
+        transition: .5s;
+        &:hover {
+            transform: scale(1.2);
+            color: #313741;
+        }
     }
     &__header {
         margin-top: 290px;

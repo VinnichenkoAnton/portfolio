@@ -7,5 +7,63 @@
     z-index: 10;
     visibility: hidden;
     opacity: 0;
-    transition: all .6s
+    transition: all .6s;
+    &__block {
+        position: relative;
+        width: 345px;
+        padding-top: 140px;
+        padding-left: 40px;
+        background-color: $main-color;
+        height: 100%;
+        transition: all .6s;
+        z-index: 10;
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: .75;
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 35px;
+    }
+    &__item {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        a {
+            color: $white;
+        }
+    }
+    &__social {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: .5s;
+    }
+    &__link {
+        color: $white;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            color: #313741;
+        }
+    }
+}
+
+.menu_active {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
 }
