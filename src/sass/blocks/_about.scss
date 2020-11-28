@@ -1,5 +1,57 @@
 .about {
     position: relative;
-    height: 1270px;
+    height: 700px;
     padding-top: 180px;
+    background-color: #22252c;
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__photo {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        img {
+            display: block;
+            position: absolute;
+            top: 43px;
+            left: 0;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__square {
+        width: 386px;
+        height: 387px;
+        border: 7px solid $main-color;
+        margin-left: 50px;
+    }
+    &__link {
+        display: block;
+        margin-top: 78px;
+        align-self: center;
+    }
+    &__text {
+        margin-left: 180px;
+        padding-right: 10px;
+    }
+    &__descr {
+        margin-top: 27px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.04em;
+        color: $white;
+    }
+    &__attr {
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        color: $main-color;
+    }
+    &__key {
+        color: $white;
+    }
 }

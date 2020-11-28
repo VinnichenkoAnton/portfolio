@@ -1,0 +1,46 @@
+.interests {
+    height: 572px;
+    background-color: #22252c;
+    padding-top: 150px;
+    &__wrapper {
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        i {
+            color: $main-color;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover .interests__circle {
+            @include gradient;
+        }
+        &:hover i {
+            color: $white;
+        }
+        &:hover .interests__descr {
+            visibility: unset;
+        }
+    }
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 94px;
+        height: 94px;
+        border: 2px solid $main-color;
+        border-radius: 50%;
+        transition: all 2s;
+    }
+    &__descr {
+        visibility: hidden;
+        margin-top: 25px;
+        font-size: 25px;
+        font-weight: 400;
+        color: $white;
+    }
+}

@@ -1,0 +1,19 @@
+.btn {
+    width: 196px;
+    height: 55px;
+    box-shadow: 2px 2px 43px 0px rgba(37, 225, 177, 0.34);
+    border-radius: 5px;
+    @include gradient;
+    transition: all .5s ease;
+    i {
+        color: $white;
+    }
+    span {
+        font-size: 12.8px;
+        font-weight: 700;
+        color: $white;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+}

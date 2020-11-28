@@ -2,11 +2,11 @@
     min-height: 100vh;
     position: relative;
     background: url("../img/main_bg.png") no-repeat 50%/cover;
-    padding-top: 38px;
+    padding: 38px 0 300px 0;
     &__hamburger {
         overflow: hidden;
         position: absolute;
-        right: 37px;
+        right: 0;
         width: 39px;
         height: 21px;
         display: flex;
