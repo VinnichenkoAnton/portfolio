@@ -1,7 +1,6 @@
 {
   "name": "pulse",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +24,14 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anhurmes/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Anhurmes/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Anhurmes/Portfolio#readme",
+  "description": ""
 }

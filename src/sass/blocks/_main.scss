@@ -18,7 +18,7 @@
             box-shadow: 0 5px 15px #313741;
         }
         &_active {
-            right: calc(100% - 330px);
+            right: calc(100% - -50px);
             z-index: 11;
             &:hover {
                 box-shadow: none;
