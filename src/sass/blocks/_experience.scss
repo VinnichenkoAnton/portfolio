@@ -1,11 +1,15 @@
-.education {
-    height: 1491px;
-    background-color: $background-grey;
-    padding: 180px 0;
+.experience {
+    height: 1750px;
+    background-color: $background-black;
+    padding: 180px 0 140px 0;
     &__title {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 140px;
+    }
+    &__subtitle {
+        margin-top: 380px;
+        text-align: center;
     }
     &__circle {
         width: 68px;
