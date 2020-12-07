@@ -1,0 +1,56 @@
+.skills {
+    height: 367px;
+    background-color: $background-grey;
+    padding: 70px 15px;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+        gap: 60px 186px;
+    }
+    &__item {
+        display: grid;
+        grid-template: 21px 14px / 140px 40px;
+        row-gap: 15px;
+        justify-content: space-between;
+        align-content: space-between;
+        &:hover .skills__line_animated {
+            animation-name: scales;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+        }
+    }
+    &__name {
+        font-size: 19.6px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    &__percent {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__line {
+        align-self: center;
+        width: 461px;
+        height: 5px;
+        background-color: #0f1012;
+        &_animated {
+            position: relative;
+            display: block;
+            height: 5px;
+            background-color: $main-color;
+            transition: all 2s;
+            &::after {
+                content: '';
+                right: -3px;
+                top: -50%;
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                background-color: $main-color;
+                border-radius: 50%;
+                box-shadow: 1px 0px 6px 0px rgba(15, 15, 17, 0.6);
+            }
+        }
+    }
+}

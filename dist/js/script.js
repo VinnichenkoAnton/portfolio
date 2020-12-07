@@ -1,6 +1,8 @@
 const hamburger = document.querySelector('.main__hamburger'),
     menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.main__hamburger');
+    closeElem = document.querySelector('.main__hamburger'),
+    counters = document.querySelectorAll('.skills__percent'),
+    lines = document.querySelectorAll('.skills__line span');
 
 hamburger.addEventListener('click', () => {
     menu.classList.toggle('menu_active');
@@ -12,4 +14,8 @@ document.querySelectorAll('.menu__item, .menu__overlay, .menu__link').forEach(fu
         menu.classList.remove('menu_active');
         hamburger.classList.remove('main__hamburger_active');
     });
+});
+
+counters.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
 });
