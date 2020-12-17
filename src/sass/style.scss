@@ -14,6 +14,7 @@
     position: relative;
 }
 
+@import 'blocks/preloader';
 @import 'blocks/menu';
 @import 'blocks/main';
 @import 'blocks/about';
@@ -25,3 +26,8 @@
 @import 'blocks/skills';
 @import 'base/animations';
 @import 'blocks/certificates';
+@import 'blocks/library';
+@import 'blocks/works';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/pageup';

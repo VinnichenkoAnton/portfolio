@@ -1,9 +1,60 @@
 .certificates {
-    height: 1050px;
-    padding: 180px 15px;
+    height: 670px;
+    padding: 90px 15px;
     background-color: $background-black;
     &__title {
         text-align: center;
-        margin-bottom: 140px;
+        margin-bottom: 90px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-flow: row;
+        align-content: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #313741;
+        border: 1px solid black;
+        transition: all 1.5s;
+        &_active {
+            width: 350px;
+            background-color: #05c7ae;
+            box-shadow: 0 14px 28px rgba(12, 184, 161, 0.25), 0 10px 10px rgba(20, 247, 134, 0.22);
+        }
+        &:hover .certificates__name {
+            color: #1f2229;
+        }
+    }
+    &__number {
+        text-align: center;
+        font-size: 37.8px;
+        font-weight: 700;
+        color: #000000;
+    }
+    &__name {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: $main-color;
+        &_active {
+            color: #1f2229;
+        }
+    }
+    &__photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 95%;
+            height: 95%;
+            object-fit: cover;
+        }
     }
 }

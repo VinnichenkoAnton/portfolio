@@ -1,0 +1,175 @@
+.contact {
+    position: relative;
+    height: 829px;
+    background-color: $background-black;
+    padding: 90px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    &__wrapper {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__line {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__label {
+        color: $main-color;
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: transparent;
+        &_first {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $main-color;
+        }
+        &_second {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(+15px);
+            color: $main-color;
+        }
+        &_third {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $main-color;
+        }
+    }
+    &__text {
+        position: relative;
+    }
+    &__btn {
+        width: 181px;
+        height: 53px;
+        border: 2px solid #00d7bb;
+        display: block;
+        margin: 0 auto;
+        margin-top: 90px;
+        text-transform: uppercase;
+        color: #02cfb4;
+        font-size: 12.8px;
+        font-weight: 700;
+        background-color: transparent;
+        transition: all .5s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#inputname {
+    height: 40px;
+    width: 555px;
+    margin-top: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: solid 2px #58616d;
+    transition: ease 1s;
+    &:focus::-webkit-input-placeholder {
+        color: transparent
+    }
+    &:focus::-moz-placeholder {
+        color: transparent
+    }
+    &:focus:-moz-placeholder {
+        color: transparent
+    }
+    &:focus:-ms-input-placeholder {
+        color: transparent
+    }
+    &:focus+.contact__label_first {
+        visibility: visible;
+    }
+    &:focus {
+        border-bottom: solid 2px $main-color;
+    }
+}
+
+#inputname-error {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    color: $main-color;
+}
+
+#inputmail {
+    height: 40px;
+    width: 555px;
+    margin-top: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: solid 2px #58616d;
+    transition: ease 1s;
+    &:focus::-webkit-input-placeholder {
+        color: transparent
+    }
+    &:focus::-moz-placeholder {
+        color: transparent
+    }
+    &:focus:-moz-placeholder {
+        color: transparent
+    }
+    &:focus:-ms-input-placeholder {
+        color: transparent
+    }
+    &:focus+.contact__label_second {
+        visibility: visible;
+    }
+    &:focus {
+        border-bottom: solid 2px $main-color;
+    }
+}
+
+#inputmail-error {
+    position: absolute;
+    left: 85%;
+    top: 10%;
+    color: $main-color;
+}
+
+#inputtext {
+    resize: none;
+    width: 1140px;
+    height: 150px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: solid 2px #58616d;
+    transition: all .25s ease-in-out;
+    &:focus::-webkit-input-placeholder {
+        color: transparent
+    }
+    &:focus::-moz-placeholder {
+        color: transparent
+    }
+    &:focus:-moz-placeholder {
+        color: transparent
+    }
+    &:focus:-ms-input-placeholder {
+        color: transparent
+    }
+    &:focus+.contact__label_third {
+        visibility: visible;
+    }
+    &:focus {
+        border-bottom: solid 2px $main-color;
+    }
+}

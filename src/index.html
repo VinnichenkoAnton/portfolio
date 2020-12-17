@@ -49,6 +49,14 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="cssload-loader">
+            <div class="cssload-inner cssload-one"></div>
+            <div class="cssload-inner cssload-two"></div>
+            <div class="cssload-inner cssload-three"></div>
+        </div>
+    </div>
+
     <div class="menu">
         <div class="menu__block">
             <nav>
@@ -82,7 +90,7 @@
     </div>
 
 
-    <div class="main">
+    <div id="up" class="main">
         <div class="container">
             <div class="main__hamburger">
                 <input type="checkbox" />
@@ -298,12 +306,12 @@
                     </div>
                 </div>
             </div>
-            <div class="title experience__subtitle">PROFESSIONAL SKILLS</div>
         </div>
     </div>
 
     <div class="skills">
         <div class="container">
+            <div class="title skills__title">PROFESSIONAL SKILLS</div>
             <div class="skills__wrapper">
                 <div class="skills__item">
                     <div class="skills__name">HTML</div>
@@ -341,40 +349,192 @@
 
     <div class="certificates">
         <div class="container">
+            <div class="title certificates__title">My Certificates</div>
             <div class="certificates__wrapper">
-                <div class="title certificates__title">My Certificates</div>
                 <div class="certificates__item">
-                    <div class="certificates__number">01.</div>
+                    <div class="certificates__number">04.</div>
                     <div class="certificates__name">UI/UX DESIGN</div>
-                    <div class="certificates__photo"><img src="" alt="certificate"></div>
+                    <div class="certificates__photo">
+                        <a href="img/certificates/certificate_1.jpg" class="ulightbox" target="_blank" title="Press to see fullsize..."><img alt="certificate" src="img/certificates/certificate_1.jpg"></a>
+                    </div>
                 </div>
                 <div class="certificates__item">
                     <div class="certificates__number">02.</div>
                     <div class="certificates__name">APP DESIGN</div>
-                    <div class="certificates__photo"></div>
+                    <div class="certificates__photo">
+                        <a href="img/certificates/certificate_1.jpg" class="ulightbox" target="_blank" title="Press to see fullsize..."><img alt="certificate" src="img/certificates/certificate_1.jpg"></a>
+                    </div>
+                </div>
+                <div class="certificates__item certificates__item_active">
+                    <div class="certificates__number">01.</div>
+                    <div class="certificates__name certificates__name_active">APP DESIGN</div>
+                    <div class="certificates__photo">
+                        <a href="img/certificates/certificate_1.jpg" class="ulightbox" target="_blank" title="Press to see fullsize..."><img alt="certificate" src="img/certificates/certificate_1.jpg"></a>
+                    </div>
                 </div>
                 <div class="certificates__item">
                     <div class="certificates__number">03.</div>
                     <div class="certificates__name">APP DESIGN</div>
-                    <div class="certificates__photo"></div>
-                </div>
-                <div class="certificates__item">
-                    <div class="certificates__number">04.</div>
-                    <div class="certificates__name">APP DESIGN</div>
-                    <div class="certificates__photo"></div>
+                    <div class="certificates__photo">
+                        <a href="img/certificates/certificate_1.jpg" class="ulightbox" target="_blank" title="Press to see fullsize..."><img alt="certificate" src="img/certificates/certificate_1.jpg"></a>
+                    </div>
                 </div>
                 <div class="certificates__item">
                     <div class="certificates__number">05.</div>
                     <div class="certificates__name">APP DESIGN</div>
-                    <div class="certificates__photo"></div>
+                    <div class="certificates__photo">
+                        <a href="img/certificates/certificate_1.jpg" class="ulightbox" target="_blank" title="Press to see fullsize..."><img alt="certificate" src="img/certificates/certificate_1.jpg"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="library">
+        <div class="container">
+            <div class="title library__title">My techlibrary</div>
+            <div class="library__shelf">
+                <img src="icons/library/HTML.svg" alt="HTML" title="HTML">
+                <img src="icons/library/SASS.svg" alt="SASS" title="SASS">
+                <img src="icons/library/CSS.svg" alt="CSS" title="CSS">
+                <img src="icons/library/BEM.svg" alt="BEM" title="BEM">
+            </div>
+            <div class="library__shelf">
+                <img src="icons/library/BOOTSTRAP.svg" alt="BOOTSTRAP" title="BOOTSTRAP">
+                <img src="icons/library/JS.svg" alt="JAVASCRIPT" title="JAVASCRIPT">
+                <img src="icons/library/JQUERY.svg" alt="JQUERY" title="JQUERY">
+                <img src="icons/library/WP.svg" alt="WordPress" title="WORDPRESS">
+            </div>
+            <div class="library__shelf">
+                <img src="icons/library/TRELLO.svg" alt="TRELLO" title="TRELLO">
+                <img src="icons/library/GULP.svg" alt="GULP" title="GULP">
+                <img src="icons/library/GIT.svg" alt="GIT" title="GIT">
+                <img src="icons/library/GITHUB.svg" alt="GITHUB" title="GITHUB">
+                <img src="icons/library/GITKRAKEN.svg" alt="GITKRAKEN" title="GITKRAKEN">
+            </div>
+            <div class="library__shelf">
+                <img src="icons/library/VISUAL_STUDIO.svg" alt="VISUAL_STUDIO" title="VISUAL_STUDIO">
+                <img src="icons/library/PHOTOSHOP.svg" alt="PHOTOSHOP" title="PHOTOSHOP">
+                <img src="icons/library/ZEPLIN.svg" alt="ZEPLIN" title="ZEPLIN">
+                <img src="icons/library/ILLUSTRATOR.svg" alt="ADOBE ILLUSTRATOR" title="ADOBE ILLUSTRATOR">
+                <img src="icons/library/FIGMA.svg" alt="FIGMA" title="FIGMA">
+                <img src="icons/library/AVOCODE.svg" alt="AVOCODE" title="AVOCODE">
+            </div>
+            <div class="title library__title">Some of my projects</div>
+        </div>
+    </div>
+
+    <div class="works">
+        <div class="container">
+            <div class="works__wrapper">
+                <div class="works__item">
+                    <a href="https://uber.vinnichenko-anton.cv.ua/" class="works__link" target="_blank">
+                        <div class="works__overlay">
+                            <p class="works__overtext">Visit the website</p>
+                        </div>
+                        <img src="img/works/uber_site.jpg" alt="PROJECT_UBER">
+                    </a>
+                    <div class="works__subtext">
+                        <div class="works__name">UBER PROJECT</div>
+                        <div class="works__descr">Website for those who are interested in cooperation with Uber in Moscow</div>
+                        <a href="#" class="works__source">Source Code<i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <a href="https://vinnichenko-anton.cv.ua/" class="works__link" target="_blank">
+                        <div class="works__overlay">
+                            <p class="works__overtext">Visit the website</p>
+                        </div>
+                        <img src="img/works/portfolio_site.jpg" alt="PROJECT_PORTFOLIO">
+                    </a>
+                    <div class="works__subtext">
+                        <div class="works__name">PORTFOLIO</div>
+                        <div class="works__descr">Business card website which is really helpful for each web-developer </div>
+                        <a href="" class="works__source">Source Code<i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <a href="https://www.pulse.vinnichenko-anton.cv.ua/" class="works__link" target="_blank">
+                        <div class="works__overlay">
+                            <p class="works__overtext">Visit the website</p>
+                        </div>
+                        <img src="img/works/pulse_site.jpg" alt="PROJECT_PULSE">
+                    </a>
+                    <div class="works__subtext">
+                        <div class="works__name">PULSE STORE</div>
+                        <div class="works__descr">Online store which presented different kinds of pulsometers for athletes </div>
+                        <a href="#" class="works__source">Source Code<i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <div class="works__empty">
+                        <p>Development is in progress...</p>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <div class="works__empty">
+                        <p>Development is in progress...</p>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <div class="works__empty">
+                        <p>Development is in progress...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="title contact__title">contact me</div>
+            <form autocomplete="off" class="contact__form" action="">
+                <div class="contact__wrapper">
+                    <div class="contact__line">
+                        <input name="name" id="inputname" placeholder="NAME" type="name">
+                        <label for="inputname" class="contact__label_first">NAME</label>
+                        <input name="email" id="inputmail" placeholder="EMAIL" type="email">
+                        <label for="inputmail" class="contact__label_second">EMAIL</label>
+                    </div>
+                    <div class="contact__text">
+                        <textarea name="text" id="inputtext" placeholder="MESSAGE"></textarea>
+                        <label for="inputtext" class="contact__label_third">MESSAGE</label>
+                    </div>
+                </div>
+                <button class=" contact__btn">Send now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__social">
+                <a href="#" class="footer__link">
+                    <i class="fas fa-phone-square-alt fa-2x"></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class="far fa-envelope fa-2x"></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class="fab fa-telegram-plane fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer__devider"></div>
+            <div class="footer__rights">oliver © 2017. ALL RIGHTS RESERVED.</div>
+        </div>
+    </div>
+
+    <a href="#up" class="pageup">
+        <img src="img/up.svg" alt="pageup">
+    </a>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

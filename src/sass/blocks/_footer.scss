@@ -1,0 +1,49 @@
+.footer {
+    background-color: $background-black;
+    height: 320px;
+    padding: 90px 0 40px 0;
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px;
+        width: 52px;
+        height: 52px;
+        background-color: #313741;
+        border-radius: 100%;
+        transition: .5s;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            background-color: $main-color;
+            text-decoration: none;
+        }
+        &:hover>i {
+            color: #22252c;
+            text-decoration: none;
+        }
+        i {
+            color: $main-color;
+        }
+    }
+    &__devider {
+        margin-top: 74px;
+        width: 100%;
+        height: 1px;
+        background-color: #313741;
+    }
+    &__rights {
+        margin-top: 38px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        color: $main-color;
+    }
+}
