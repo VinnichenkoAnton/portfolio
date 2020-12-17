@@ -6,7 +6,7 @@
     &__hamburger {
         overflow: hidden;
         position: absolute;
-        right: 0;
+        right: 39px;
         width: 39px;
         height: 21px;
         display: flex;
@@ -16,22 +16,7 @@
         transition: all .5s;
         &:hover {
             box-shadow: 0 5px 15px #313741;
-        }
-        &_active {
-            right: calc(100% - -50px);
-            z-index: 11;
-            &:hover {
-                box-shadow: none;
-            }
-        }
-        input {
-            display: flex;
-            width: 60px;
-            height: 60px;
-            position: absolute;
             cursor: pointer;
-            opacity: 0;
-            z-index: 1;
         }
         span {
             width: 40px;
@@ -43,22 +28,30 @@
             -ms-transition: all 1s cubic-bezier(.08, .81, .87, .71);
             -o-transition: all 1s cubic-bezier(.08, .81, .87, .71);
             transition: all 1s cubic-bezier(.08, .81, .87, .71);
-            &:nth-child(3) {
+            &:nth-child(2) {
                 width: 30px;
             }
         }
-        & input:checked~.main__span1 {
-            background-color: $white;
-            transform: rotate(45deg) translate(12px, 3px);
-        }
-        & input:checked~.main__span2 {
-            background-color: $white;
-            transform: rotate(495deg);
-        }
-        & input:checked~.main__span3 {
-            background-color: $white;
-            transform: rotate(45deg);
-            opacity: 0;
+        &_active {
+            right: calc(100% - 330px);
+            z-index: 11;
+            &:hover {
+                box-shadow: none;
+                cursor: pointer;
+            }
+            span:nth-child(1) {
+                background-color: $white;
+                transform: rotate(45deg) translate(12px, 3px);
+            }
+            span:nth-child(2) {
+                background-color: $white;
+                transform: rotate(495deg);
+            }
+            span:nth-child(3) {
+                background-color: $white;
+                transform: rotate(45deg);
+                opacity: 0;
+            }
         }
     }
     &__social {

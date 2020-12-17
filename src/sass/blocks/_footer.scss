@@ -1,6 +1,6 @@
 .footer {
     background-color: $background-black;
-    height: 320px;
+    min-height: 320px;
     padding: 90px 0 40px 0;
     &__social {
         display: flex;
