@@ -3,7 +3,25 @@
         width: 0;
     }
     to {
-        width: 95%;
+        width: 85%;
+    }
+}
+
+@keyframes scales_s {
+    from {
+        width: 0;
+    }
+    to {
+        width: 55%;
+    }
+}
+
+@keyframes scales_m {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
     }
 }
 

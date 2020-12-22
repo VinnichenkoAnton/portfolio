@@ -1,11 +1,11 @@
 .experience {
-    min-height: 1491px;
+    min-height: 1100px;
     background-color: $background-black;
-    padding: 180px 0;
+    padding: 90px 0;
     &__title {
         margin: 0 auto;
         text-align: center;
-        margin-bottom: 140px;
+        margin-bottom: 90px;
     }
     &__circle {
         width: 68px;
@@ -21,7 +21,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                top: 251px;
+                top: 202px;
                 left: 50%;
                 transform: translateX(-50%);
                 height: 105px;
@@ -33,7 +33,7 @@
     &__wrapper {
         padding-top: 70px;
         display: grid;
-        grid-template-rows: repeat(4, 90px);
+        grid-template-rows: repeat(3, 90px);
         row-gap: 120px;
         justify-items: center;
     }

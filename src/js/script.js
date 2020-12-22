@@ -3,7 +3,8 @@ const hamburger = document.querySelector('.main__hamburger'),
     closeElem = document.querySelector('.main__hamburger'),
     counters = document.querySelectorAll('.skills__percent'),
     lines = document.querySelectorAll('.skills__line span'),
-    certificates = document.querySelectorAll('.certificates__item');
+    certificates = document.querySelectorAll('.certificates__item'),
+    nameActive = document.querySelector('.certificates__name_active');
 
 window.onload = function() {
     document.body.classList.add('loaded_hiding');
@@ -18,7 +19,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('main__hamburger_active');
 });
 
-document.querySelectorAll('.menu__item, .menu__overlay, .menu__link').forEach(function(e) {
+document.querySelectorAll('.menu__ref, .menu__overlay, .menu__link').forEach(function(e) {
     e.addEventListener('click', function() {
         menu.classList.remove('menu_active');
         hamburger.classList.remove('main__hamburger_active');
@@ -32,11 +33,13 @@ counters.forEach((item, i) => {
 certificates.forEach(function(e) {
     e.addEventListener('mouseover', function() {
         certificates[2].classList.remove('certificates__item_active');
+        nameActive.classList.remove('certificates__name_active');
         e.classList.add('certificates__item_active');
     });
 
     e.addEventListener('mouseout', function() {
         e.classList.remove('certificates__item_active');
+        nameActive.classList.add('certificates__name_active');
         certificates[2].classList.add('certificates__item_active');
     });
 });

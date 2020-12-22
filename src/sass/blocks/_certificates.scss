@@ -22,6 +22,7 @@
         transition: all 1.5s;
         &_active {
             width: 350px;
+            text-transform: uppercase;
             background-color: #05c7ae;
             box-shadow: 0 14px 28px rgba(12, 184, 161, 0.25), 0 10px 10px rgba(20, 247, 134, 0.22);
         }
@@ -40,6 +41,7 @@
         font-size: 24px;
         font-weight: 600;
         color: $main-color;
+        text-transform: uppercase;
         &_active {
             color: #1f2229;
         }

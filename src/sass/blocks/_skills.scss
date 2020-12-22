@@ -5,6 +5,7 @@
     &__wrapper {
         display: grid;
         grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+        grid-auto-rows: auto;
         gap: 60px 186px;
     }
     &__title {
@@ -21,6 +22,12 @@
             animation-name: scales;
             animation-duration: 1.5s;
             animation-timing-function: ease-in;
+        }
+        &:hover .skills__line_s {
+            animation-name: scales_s;
+        }
+        &:hover .skills__line_m {
+            animation-name: scales_m;
         }
     }
     &__name {
