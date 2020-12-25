@@ -125,8 +125,15 @@
     &__place {
         position: relative;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        &_left {
+            justify-content: flex-end;
+            text-align: right;
+        }
+        &_right {
+            justify-content: flex-start;
+            text-align: left;
+        }
     }
     &__name {
         font-size: 27px;

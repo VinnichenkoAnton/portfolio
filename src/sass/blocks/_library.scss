@@ -4,6 +4,9 @@
     background-color: $background-grey;
     &__title {
         text-align: center;
+        &:first-child {
+            margin-bottom: 90px;
+        }
     }
     &__shelf {
         display: flex;
