@@ -19,7 +19,7 @@
         justify-content: center;
         background-color: #313741;
         border: 1px solid black;
-        transition: all 1.5s;
+        transition: all 1s ease-in;
         &_active {
             width: 350px;
             text-transform: uppercase;

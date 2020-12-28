@@ -96,6 +96,12 @@
     }
     .main {
         padding-bottom: 160px;
+        &__hamburger {
+            &:hover {
+                box-shadow: none;
+                cursor: pointer;
+            }
+        }
         &__hamburger_active {
             right: calc(100% - 230px);
         }
@@ -113,7 +119,8 @@
             display: block;
         }
         &__text {
-            margin-left: 40px;
+            margin-left: 0;
+            padding-right: 0;
         }
         &__square {
             display: block;
@@ -265,6 +272,7 @@
             height: 65px;
         }
         &__descr {
+            font-size: 19px;
             margin-top: 5px;
         }
     }
@@ -384,6 +392,10 @@
         }
     }
     .contact {
+        min-height: 670px;
+        &__wrapper {
+            height: 260px;
+        }
         &__line {
             flex-direction: column;
         }
@@ -391,6 +403,9 @@
             top: 50%;
             left: 0;
             transform: none;
+        }
+        &__btn {
+            margin-top: 50px;
         }
     }
     #inputname {
@@ -401,6 +416,9 @@
         height: 40px;
         width: 100%;
     }
+    #inputtext {
+        height: 120px;
+    }
     #inputname-error {
         left: 25%;
         top: 20%;
@@ -410,6 +428,8 @@
         top: 70%;
     }
     .footer {
+        min-height: 227px;
+        padding-top: 0;
         &__link {
             margin: 0 7px;
         }

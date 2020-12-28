@@ -6,17 +6,17 @@
     &__hamburger {
         overflow: hidden;
         position: absolute;
-        right: 39px;
+        right: 15px;
         width: 39px;
         height: 21px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        transition: all .5s;
+        transition: all .3s;
         z-index: 1111;
         &:hover {
-            box-shadow: 0 5px 15px #313741;
+            box-shadow: 10px 5px 4px rgba(14, 13, 13, .3);
             cursor: pointer;
         }
         span {
@@ -24,11 +24,11 @@
             height: 3px;
             background: $white;
             border-radius: 4px;
-            -webkit-transition: all 1s cubic-bezier(.08, .81, .87, .71);
-            -moz-transition: all 1s cubic-bezier(.08, .81, .87, .71);
-            -ms-transition: all 1s cubic-bezier(.08, .81, .87, .71);
-            -o-transition: all 1s cubic-bezier(.08, .81, .87, .71);
-            transition: all 1s cubic-bezier(.08, .81, .87, .71);
+            -webkit-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+            -moz-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+            -ms-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+            -o-transition: all .5s cubic-bezier(.08, .81, .87, .71);
+            transition: all .5s cubic-bezier(.08, .81, .87, .71);
             &:nth-child(2) {
                 width: 30px;
             }

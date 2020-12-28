@@ -45,6 +45,7 @@
         width: 461px;
         height: 5px;
         background-color: #0f1012;
+        transition: all 1s ease-in;
         &_animated {
             position: relative;
             display: block;

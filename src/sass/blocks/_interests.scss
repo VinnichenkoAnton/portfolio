@@ -19,12 +19,14 @@
         align-items: center;
         &:hover .interests__circle {
             @include gradient;
+            opacity: 1;
         }
         &:hover i {
             color: $white;
         }
         &:hover .interests__descr {
-            visibility: unset;
+            visibility: visible;
+            opacity: 1;
         }
     }
     &__circle {
@@ -35,7 +37,7 @@
         height: 94px;
         border: 2px solid $main-color;
         border-radius: 50%;
-        transition: all 2s;
+        transition: 1s ease-in;
     }
     &__descr {
         visibility: hidden;
@@ -43,5 +45,7 @@
         font-size: 25px;
         font-weight: 400;
         color: $white;
+        opacity: 0;
+        transition: 1s ease-in;
     }
 }
