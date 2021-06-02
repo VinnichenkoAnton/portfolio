@@ -80,10 +80,10 @@
         flex-direction: column;
         justify-content: center;
         &:nth-child(odd) {
-            justify-self: end;
+            justify-self: flex-end;
         }
         &:nth-child(even) {
-            justify-self: start;
+            justify-self: flex-start;
         }
         &::before {
             content: '';
@@ -115,11 +115,11 @@
         letter-spacing: 0.02em;
         color: $white;
         &:nth-child(odd) {
-            justify-self: start;
+            justify-self: flex-start;
             text-align: right;
         }
         &:nth-child(even) {
-            justify-self: end;
+            justify-self: flex-end;
         }
     }
     &__place {

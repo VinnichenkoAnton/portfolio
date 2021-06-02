@@ -14,71 +14,73 @@ window.onload = function() {
     }, 500);
 };
 
-hamburger.addEventListener('click', () => {
-    menu.classList.toggle('menu_active');
-    hamburger.classList.toggle('main__hamburger_active');
-});
-
-document.querySelectorAll('.menu__ref, .menu__overlay, .menu__link').forEach(function(e) {
-    e.addEventListener('click', function() {
-        menu.classList.remove('menu_active');
-        hamburger.classList.remove('main__hamburger_active');
+window.addEventListener('DOMContentLoaded', () => {
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('menu_active');
+        hamburger.classList.toggle('main__hamburger_active');
     });
-});
-
-counters.forEach((item, i) => {
-    lines[i].style.width = item.innerHTML;
-});
-
-certificates.forEach(function(e) {
-    e.addEventListener('mouseover', function() {
-        certificates[2].classList.remove('certificates__item_active');
-        nameActive.classList.remove('certificates__name_active');
-        e.classList.add('certificates__item_active');
+    
+    document.querySelectorAll('.menu__ref, .menu__overlay, .menu__link').forEach(function(e) {
+        e.addEventListener('click', function() {
+            menu.classList.remove('menu_active');
+            hamburger.classList.remove('main__hamburger_active');
+        });
     });
-
-    e.addEventListener('mouseout', function() {
-        e.classList.remove('certificates__item_active');
-        nameActive.classList.add('certificates__name_active');
-        certificates[2].classList.add('certificates__item_active');
+    
+    counters.forEach((item, i) => {
+        lines[i].style.width = item.innerHTML;
     });
-});
-
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 940) {
-        $('.pageup').fadeIn();
-    } else {
-        $('.pageup').fadeOut();
-    }
-
-});
-
-$("a[href^='#']").click(function() {
-    var _href = $(this).attr("href");
-    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
-    return false;
-});
-
-$('.contact__form').validate({
-    rules: {
-        name: "required",
-        email: {
-            required: true,
-            email: true
+    
+    certificates.forEach(function(e) {
+        e.addEventListener('mouseover', function() {
+            certificates[1].classList.remove('certificates__item_active');
+            nameActive.classList.remove('certificates__name_active');
+            e.classList.add('certificates__item_active');
+        });
+    
+        e.addEventListener('mouseout', function() {
+            e.classList.remove('certificates__item_active');
+            nameActive.classList.add('certificates__name_active');
+            certificates[1].classList.add('certificates__item_active');
+        });
+    });
+    
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 940) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
         }
-    }
-});
-
-$('form').submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-        type: "POST",
-        url: "mailer/smart.php",
-        data: $(this).serialize()
-    }).done(function() {
-        $(this).find("#inputname, #inputmail, #inputtext").val("");
-
-        $('form').trigger('reset');
+    
     });
-    return false;
-});
+    
+    $("a[href^='#']").click(function() {
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
+    
+    $('.contact__form').validate({
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        }
+    });
+    
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("#inputname, #inputmail, #inputtext").val("");
+    
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+})

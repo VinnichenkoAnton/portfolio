@@ -10,11 +10,6 @@
             width: 410px;
         }
     }
-    .certificates {
-        &__item_active {
-            width: 260px;
-        }
-    }
     .contact {
         padding: 90px 15px;
     }
@@ -193,23 +188,20 @@
             justify-content: center;
         }
         &__item {
-            &_active {
-                width: 320px;
-            }
             &:nth-child(1) {
-                order: 4;
-            }
-            &:nth-child(2) {
                 order: 2;
             }
-            &:nth-child(3) {
+            &:nth-child(2) {
                 order: 1;
             }
-            &:nth-child(4) {
+            &:nth-child(3) {
                 order: 3;
             }
-            &:nth-child(5) {
+            &:nth-child(4) {
                 order: 5;
+            }
+            &:nth-child(5) {
+                order: 4;
             }
         }
     }
